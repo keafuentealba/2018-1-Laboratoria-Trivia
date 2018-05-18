@@ -2,7 +2,6 @@ window.onload = function() {
 
     var wantToPlay = prompt("¿quieres jugar? s/n");
     if (wantToPlay.toLowerCase() == "s") {
-        var answer1 = prompt("¿han egresado hombres en Laboratoria? s/n");
         if (answer1.toLowerCase() == "n") {
             document.getElementById("rightAnswersText").innerHTML =
                 document.getElementById("rightAnswersText").innerHTML +
