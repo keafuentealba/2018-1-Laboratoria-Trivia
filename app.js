@@ -2,7 +2,10 @@ window.onload = function() {
 
     var wantToPlay = prompt("¿quieres jugar? s/n");
     if (wantToPlay.toLowerCase() == "s") {
-        if (answer1.toLowerCase() == "n") {
+        function check()= 
+        var question1= document.quiz.question1.value
+        var question2= document.quiz.question2.value
+        if (question1 == "No") {
             document.getElementById("rightAnswersText").innerHTML =
                 document.getElementById("rightAnswersText").innerHTML +
                 "<div class='answer'>" +
@@ -15,9 +18,7 @@ window.onload = function() {
                 "<p>No han egresado hombres</p>"
             "</div>";
         }
-
-        var answer2 = prompt("¿hay laboratoria en concepción? s/n");
-        if (answer2.toLowerCase() == "n") {
+        if (question2== "No") {
             document.getElementById("rightAnswersText").innerHTML =
                 document.getElementById("rightAnswersText").innerHTML +
                 "<div class='answer'>" +
